@@ -62,7 +62,7 @@ for i in 1 2 ; do
         --admin-username azureuser \
         --resource-group $RgName \
         --name NHT-Web-VM$i \
-        --nics NHTNic$i \
+        --nics NHTwebNic$i \
         --image Ubuntu2204 \
         --availability-set portalAvailabilitySet \
         --generate-ssh-keys \
