@@ -1,0 +1,7 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - nginx
+runcmd:
+  - service nginx restart
+  - [ 'sh', '-c', 'echo "<head><title>Patient Portal Web: "`hostname`"</title></head><body><h1>Welcome to "`hostname`"</h1><p><strong>15/06/2023</strong></p></body>" > /var/www/html/index.nginx-debian.html']
